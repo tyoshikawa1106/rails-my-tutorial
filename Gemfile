@@ -30,6 +30,8 @@ gem 'better_errors', group: [:development, :test]
 gem 'binding_of_caller', group: [:development, :test]
 # テストカバレッジ確認
 gem 'simplecov', :require => false, :group => :test
+# パスワードハッシュ化
+gem 'bcrypt-ruby', '3.1.5'
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false
