@@ -1,0 +1,24 @@
+<% provide(:title, "Sign in") %>
+<div class="signup-style">
+  <div class="row">
+    <div class="col-sm-6 col-md-5 col-md-offset-4">
+      <h1>Sign in</h1>
+      <div class="account-wall">
+        <img class="profile-img" src="http://railstutorial.jp/images/layout/logo.png?1304201481" alt="">
+        <%= form_for(:session, url: sessions_path, :html => {:class => "form-signin"}) do |f| %>
+          
+          <%= f.label :email %>
+          <%= f.text_field :email, :class => 'form-control' %>
+          
+          <%= f.label :password %>
+          <%= f.password_field :password, :class => 'form-control' %>
+          
+          <div style="margin: 30px; 0;">
+            <%= f.submit "Sign in", class: "btn btn-lg btn-primary" %>
+          </div>
+          <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
