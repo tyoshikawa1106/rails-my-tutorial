@@ -1,6 +1,6 @@
-$lightGray: #999;
 $grayMediumLight: #eaeaea;
 $grayLighter: #eee;
+$grayLight: #999;
 
 /* mixins, variables, etc. */
 @mixin box_sizing {
@@ -52,7 +52,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $lightGray;
+  color: $grayLight;
 }
 
 p {
@@ -82,7 +82,7 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-  color: $lightGray;
+  color: $grayLight;
   a {
     color: #555;
     &:hover {
@@ -166,6 +166,34 @@ input {
     &:last-child {
       border-bottom: 1px solid $grayLighter;
     }
+  }
+}
+
+/* microposts */
+
+.microposts {
+  list-style: none;
+  margin-left: -40px;
+
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+}
+.content {
+  display: block;
+}
+.timestamp {
+  color: $grayLight;
+}
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
   }
 }
 
