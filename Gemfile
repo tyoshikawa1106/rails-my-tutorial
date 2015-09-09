@@ -34,6 +34,11 @@ gem 'binding_of_caller', group: [:development, :test]
 gem 'simplecov', :require => false, :group => :test
 # パスワードハッシュ化
 gem 'bcrypt-ruby', '3.1.5'
+# テストデータ作成
+gem 'faker', '~> 1.5.0'
+# ページネーション
+gem 'will_paginate', '~> 3.0.7'
+gem 'bootstrap-will_paginate', '~> 0.0.10'
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false
