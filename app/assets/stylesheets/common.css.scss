@@ -68,7 +68,7 @@ p {
   margin-right: 10px;
   font-size: 1.7em;
   color: #fff;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   letter-spacing: -1px;
   font-weight: bold;
   line-height: 1;
@@ -106,6 +106,7 @@ footer {
 /* sidebar */
 
 aside {
+  margin-top: 20px;
   section {
     padding: 10px 0;
     border-top: 1px solid $grayLighter;
