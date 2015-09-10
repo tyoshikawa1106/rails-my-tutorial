@@ -4,7 +4,7 @@
     <div class="col-sm-6 col-md-5 col-md-offset-4">
       <h1>Sign in</h1>
       <div class="account-wall">
-        <img class="profile-img" src="http://railstutorial.jp/images/layout/logo.png?1304201481" alt="">
+        <img class="profile-img" src="<%= asset_path "logo.png" %>" alt="">
         <%= form_for(:session, url: sessions_path, :html => {:class => "form-signin"}) do |f| %>
           
           <%= f.label :email %>
