@@ -39,6 +39,8 @@ gem 'faker', '~> 1.5.0'
 # ページネーション
 gem 'will_paginate', '~> 3.0.7'
 gem 'bootstrap-will_paginate', '~> 0.0.10'
+# GitHub&テストカバレッジ
+gem 'coveralls', require: false
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false
