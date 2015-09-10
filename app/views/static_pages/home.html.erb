@@ -1,23 +1,27 @@
 <% if signed_in? %>
   <div class="row">
     <aside class="col-md-4">
-      <section>
-        <%= render 'shared/user_info' %>
-      </section>
-      <section>
-        <%= render 'shared/stats' %>
-      </section>
-      <section>
-        <%= render 'shared/micropost_form' %>
-      </section>
+      <div class="card padding">
+        <section>
+          <%= render 'shared/user_info' %>
+        </section>
+        <section>
+          <%= render 'shared/stats' %>
+        </section>
+        <section>
+          <%= render 'shared/micropost_form' %>
+        </section>
+      </div>
     </aside>
     <div class="col-md-8">
-      <h3>Micropost Feed</h3>
-      <%= render 'shared/feed' %>
+      <div class="card padding">
+        <h3>Micropost Feed</h3>
+        <%= render 'shared/feed' %>
+      </div>
     </div>
   </div>
 <% else %>
-  <div class="center jumbotron">
+  <div class="center jumbotron" style="background-color: #8BC34A;">
     <h1>Welcome to the Rails Tutorial App</h1>
     <h2>
       This is the home page for the

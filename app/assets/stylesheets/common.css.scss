@@ -3,6 +3,8 @@ $grayLighter: #eee;
 $grayLight: #999;
 $blue: #049cdb;
 
+$gray-color: #9E9E9E;
+
 /* mixins, variables, etc. */
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -32,6 +34,10 @@ textarea {
   h1 {
     margin-bottom: 10px;
   }
+}
+
+.padding {
+  padding: 10px;
 }
 
 /* typography */
@@ -82,7 +88,7 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid $gray-color;
   color: $grayLight;
   a {
     color: #555;
@@ -106,10 +112,9 @@ footer {
 /* sidebar */
 
 aside {
-  margin-top: 20px;
   section {
     padding: 10px 0;
-    border-top: 1px solid $grayLighter;
+    border-top: 1px solid $gray-color;
     &:first-child {
       border: 0;
       padding-top: 0;
@@ -134,7 +139,7 @@ aside {
   a {
     float: left;
     padding: 0 10px;
-    border-left: 1px solid $grayLighter;
+    border-left: 1px solid $gray-color;
     color: gray;
     &:first-child {
       padding-left: 0;
@@ -193,9 +198,9 @@ input {
   li {
     overflow: auto;
     padding: 10px 0;
-    border-top: 1px solid $grayLighter;
+    border-top: 1px solid $gray-color;
     &:last-child {
-      border-bottom: 1px solid $grayLighter;
+      border-bottom: 1px solid $gray-color;
     }
   }
 }
@@ -208,7 +213,7 @@ input {
 
   li {
     padding: 10px 0;
-    border-top: 1px solid #e8e8e8;
+    border-top: 1px solid $gray-color;
   }
 }
 .content {
@@ -223,8 +228,9 @@ input {
 }
 aside {
   textarea {
-    height: 100px;
+    height: 100px !important;
     margin-bottom: 5px;
+    resize: none;  
   }
 }
 

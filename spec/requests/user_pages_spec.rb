@@ -87,7 +87,7 @@ describe "User pages" do
 
         describe "toggling the button" do
           before { click_button "Follow" }
-          it { should have_xpath("//input[@value='Unfollow']") }
+          it { should have_xpath("//span[@class='s1utility s1utility-error']") }
         end
       end
 
@@ -111,7 +111,7 @@ describe "User pages" do
 
         describe "toggling the button" do
           before { click_button "Unfollow" }
-          it { should have_xpath("//input[@value='Follow']") }
+          it { should have_xpath("//span[@class='s1utility s1utility-adduser']") }
         end
       end
     end
