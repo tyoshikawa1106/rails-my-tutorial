@@ -12,6 +12,4 @@
  *
  *= require_tree .
  *= require_self
- *= require bootstrap-sf1/dist/css/bootstrap.min.css
- *= require bootstrap-sf1/dist/css/docs.min.css
  */
